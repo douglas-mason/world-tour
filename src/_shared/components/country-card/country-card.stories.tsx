@@ -1,7 +1,7 @@
 import React from 'react';
 import { CountryCard } from './country-card.component';
 
-import '../../../styles/app.scss';
+import '../../../app.scss';
 
 export default {
   title: 'Country Card',
