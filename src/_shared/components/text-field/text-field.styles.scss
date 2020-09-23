@@ -1,0 +1,10 @@
+.text-field {
+  display: block;
+  margin-bottom: 5px;
+  &__label {
+    font-weight: 600;
+  }
+  &__value {
+    font-weight: 300;
+  }
+}

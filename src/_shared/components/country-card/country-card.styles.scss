@@ -1,0 +1,20 @@
+.country-card {
+  width: 245px;
+  height: 360px;
+  // box-shadow: 1px 1px 1px 1px lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  &__dark {
+    background-color: var(--theme-dark-background-color-2);
+  }
+  &__light {
+    background-color: var(--theme-light-background-color-2);
+  }
+  &__flag {
+    height: 150px;
+  }
+  &__info {
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+}
