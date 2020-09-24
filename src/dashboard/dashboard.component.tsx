@@ -13,6 +13,7 @@ export const Dashboard = () => {
     if (countries.length < 1) {
       getAllCountries().then((results) => setCountries(results));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <section className="dashboard">
