@@ -1,0 +1,11 @@
+.region-filter {
+  width: 15rem;
+  &__light {
+    background-color: var(--theme-light-background-color-2);
+    color: var(--theme-light-input-text-color);
+  }
+  &__dark {
+    background-color: var(--theme-dark-background-color-2);
+    color: var(--theme-dark-input-text-color);
+  }
+}

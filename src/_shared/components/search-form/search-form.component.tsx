@@ -15,19 +15,20 @@ export const SearchForm: React.FC = () => {
       return;
     }
     const results = await searchCountries(query);
-    console.log(results);
     setCountries(results);
   };
   return (
     <form onSubmit={onSubmit}>
-      <div className={`search-form search-form__${theme.name}`}>
-        <FontAwesomeIcon icon="search" />
-        <input
-          placeholder="Search for a country..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-      </div>
+      <label>
+        <div className={`search-form search-form__${theme.name}`}>
+          <FontAwesomeIcon icon="search" style={{ cursor: 'pointer' }} />
+          <input
+            placeholder="Search for a country..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </div>
+      </label>
     </form>
   );
 };

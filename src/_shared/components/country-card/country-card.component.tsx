@@ -11,9 +11,9 @@ export const CountryCard: React.FC<Props> = ({ country }) => {
   const theme = useTheme();
   return (
     <section className={`country-card country-card__${theme.name}`}>
-      <div className="country-card__flag">
-        <img alt={`Flag of ${country.name}`} src={country.flag} width="245" />
-      </div>
+      <figure className="country-card__flag">
+        <img alt={`Flag of ${country.name}`} src={country.flag} />
+      </figure>
       <div className="country-card__info">
         <Header text={country.name}></Header>
         <TextField

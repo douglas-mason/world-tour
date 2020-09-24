@@ -10,3 +10,44 @@
   --theme-light-input-text-color: #858585;
   --theme-dark-input-text-color: #ffffff;
 }
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  &__main-content {
+    padding: 0px 10vh;
+  }
+  &__light {
+    background-color: var(--theme-light-background-color-1);
+    * {
+      color: var(--theme-light-text-color);
+    }
+    input {
+      background-color: var(--theme-light-background-color-2);
+      color: var(--theme-light-input-text-color);
+    }
+  }
+  &__dark {
+    background-color: var(--theme-dark-background-color-1);
+    * {
+      color: var(--theme-dark-text-color);
+    }
+    input {
+      background-color: var(--theme-dark-background-color-2);
+      color: var(--theme-dark-input-text-color);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0px;
+}

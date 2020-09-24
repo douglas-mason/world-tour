@@ -7,14 +7,18 @@ import {
   faSearch,
   faArrowLeft,
   faMoon,
+  faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
+import { ThemeContextProvider } from './_shared/hooks/useTheme';
 
-library.add(faSearch, faArrowLeft, faMoon);
+library.add(faSearch, faArrowLeft, faMoon, faChevronDown);
 
 function App() {
   return (
-    <div className="App">
-      <AppRouter />
+    <div>
+      <ThemeContextProvider>
+        <AppRouter />
+      </ThemeContextProvider>
     </div>
   );
 }

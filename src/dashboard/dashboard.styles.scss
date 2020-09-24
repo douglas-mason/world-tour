@@ -1,0 +1,15 @@
+.dashboard {
+  &__search-controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__results {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__result-item {
+    margin: 50px 50px 0px 0px;
+    display: flex;
+    align-items: stretch;
+  }
+}

@@ -5,10 +5,10 @@ export const getAllCountries = async (): Promise<Country[]> => {
 export const getCountriesByRegion = async (
   region: string
 ): Promise<Country[]> => {
-  return apiClient(`/regionalbloc/${region}`);
+  return apiClient(`/region/${region}`);
 };
 
-export const getCountryByCode = async (code: string): Promise<Country[]> => {
+export const getCountryByCode = async (code: string): Promise<Country> => {
   return apiClient(`/alpha/${code}`);
 };
 

@@ -10,6 +10,7 @@ interface Country {
   topLevelDomain: string[];
   currencies: Currency[];
   languages: Language[];
+  alpha3Code: string;
 }
 
 type Currency = {
